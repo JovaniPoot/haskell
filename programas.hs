@@ -39,3 +39,10 @@ intervaloNumeros n = [x | x<-[21..60], x<=20+n]
 hipotenusa :: Double->Double->Double
 hipotenusa a b= (sqrt a)+ (sqrt b)
 
+--10 suma del cuadrado de los elemntos de una lista con recursividad
+
+sumar::[Double]->Double
+sumar [ ] = 0
+sumar (x:xs) = x**2 + sumar(xs)
+
+
